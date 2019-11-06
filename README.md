@@ -10,8 +10,10 @@ dockerized multi kernel notebook
 
 ## using docker-compose:
 
-change/set up the .env file.
+change/set up the .env file
+
 NOTEBOOK_VOLUME= # shared volume for notebooks data / default - ./notebook_data
+
 NOTE_BOOK_PORT= # the notebook port / default - 8888
 
 1. docker-compose up -d
