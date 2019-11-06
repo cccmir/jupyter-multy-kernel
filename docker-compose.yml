@@ -1,0 +1,15 @@
+version: '3'
+services:
+  notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${NOTE_BOOK_PORT:-8888}:8888
+    entrypoint:
+      - start-notebook.sh
+      - --NotebookApp.token=''
+      - --NotebookApp.password=''
+    volumes:
+      - ${NOTEBOOK_VOLUME}:/home/jovyan/notebooks
+    restart: always
