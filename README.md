@@ -1,6 +1,9 @@
 # jupyter-multy-kernel
 dockerized multi kernel notebook
 
+Knowledge from the jupyter dockerhub repo
+https://hub.docker.com/u/jupyter
+
 ## Current Supported Kernels:
 
 * Python
